@@ -12,15 +12,12 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 from django.contrib.messages import constants as messages
-from decouple import config
-from dotenv import load_dotenv
 import os
 import django_heroku
 import dj_database_url
 
 # Initialise environment variables
 
-load_dotenv()
 
 
 
@@ -37,7 +34,7 @@ SECRET_KEY = 'django-insecure-he4=p5@#%hfi8lvq@%zwa=kx!flhz0g-#_1@)lw&ktc5f9(hm2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://arraf.pythonanywhere.com']
 
 
 
